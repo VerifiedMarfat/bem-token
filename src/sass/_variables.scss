@@ -1,0 +1,86 @@
+/*------------------------------------*\
+    $DEBUG
+\*------------------------------------*/
+/**
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `true` or `false`.
+ */
+// $debug-mode:        true;
+
+
+/*------------------------------------*\
+    $OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+$use-arrows:        false;
+$use-beautons:      false;
+$use-block-list:    false;
+$use-breadcrumb:    false;
+$use-columns:       false;
+$use-flexbox:       false;
+$use-flyout:        false;
+$use-greybox:       false;
+$use-grids:         false;
+$use-icon-text:     false;
+$use-island:        false;
+$use-link-complex:  false;
+$use-lozenges:      false;
+$use-marginalia:    false;
+$use-matrix:        false;
+$use-media:         false;
+$use-nav:           false;
+$use-options:       false;
+$use-pagination:    false;
+$use-rules:         false;
+$use-split:         false;
+$use-sprite:        false;
+$use-stats:         false;
+$use-this-or-this:  false;
+
+
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override inuit.css’ defaults here.
+ */
+$palm-start: 	480px;
+$lap-start: 	767px;
+$desk-start: 	1025px;
+$wide-start: 	1280px;
+
+
+/*------------------------------------*\
+    $COLOURS
+\*------------------------------------*/
+/**
+ * Define colours using the commented variables, don't forget to comment the colour name next to each variable.
+ */
+//$alpha:
+//$bravo:
+//$charlie:
+//$delta:
+//$echo:
+//$foxtrot:
+//$golf:
+//$hotel:
+//$india:
+//$juliet:
+//$kilo:
+//$lima:
+//$mike:
+//$november:
+//$oscar:
+//$papa:
+//$quebec:
+//$romeo:
+//$sierra:
+//$tango:
+//$uniform:
+//$victor:
+//$whiskey:
+//$xray:
+//$yankee:
+//$zulu:
