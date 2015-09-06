@@ -11,6 +11,10 @@ header {
     background-color: $charlie;
 }
 
+nav {
+    position: relative;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: $max-width;
