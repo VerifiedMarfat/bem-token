@@ -1,0 +1,11 @@
+.media__img {
+    @include media-query(palm) {
+        margin: 0;
+        float: none;
+
+        img {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
