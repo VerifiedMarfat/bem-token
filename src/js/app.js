@@ -1,1 +1,1 @@
-require('./custom/sample.js');
+require('./custom/slider.js');

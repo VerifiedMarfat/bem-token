@@ -22,7 +22,7 @@ module.exports = function(grunt) {
          ============================================================*/
         scsslint: {
             options: {
-                exclude: 'src/sass/inuit/**/*',
+                exclude: ['src/sass/inuit/**/*', 'src/sass/generic/*.scss'],
                 config: '.scss-lint.yml',
             },
             dist: {
@@ -75,8 +75,8 @@ module.exports = function(grunt) {
         browserify: {
             dist: {
                 files: {
-                    'release/js/app.js': ['js/app.js'],
-                    'release/js/lib.js': ['js/lib.js']
+                    'release/js/app.js': ['src/js/app.js'],
+                    'release/js/lib.js': ['src/js/lib.js']
                 }
             }
         },
@@ -125,6 +125,14 @@ module.exports = function(grunt) {
             js: {
                 files: ['src/js/**/*.js'],
                 tasks: ['jshint', 'browserify', 'uglify'],
+                options: {
+                    livereload: true
+                }
+            },
+
+            misc: {
+                files: ['src/fonts/**/', 'src/images/**/'],
+                tasks: ['copy'],
                 options: {
                     livereload: true
                 }

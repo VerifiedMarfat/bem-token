@@ -1,0 +1,13 @@
+.social {
+    font-size: em(30);
+    text-align: center;
+
+    .social--icon {
+        margin: 0 20px;
+        color: $foxtrot;
+
+        &:hover {
+            color: $delta;
+        }
+    }
+}

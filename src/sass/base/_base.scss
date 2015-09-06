@@ -1,0 +1,23 @@
+body {
+    background-color: $bravo;
+    margin-top: $header-height;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: $header-height;
+    background-color: $charlie;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: $max-width;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}

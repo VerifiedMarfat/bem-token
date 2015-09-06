@@ -22,15 +22,15 @@ $use-columns:       false;
 $use-flexbox:       false;
 $use-flyout:        false;
 $use-greybox:       false;
-$use-grids:         false;
+$use-grids:         true;
 $use-icon-text:     false;
 $use-island:        false;
 $use-link-complex:  false;
 $use-lozenges:      false;
 $use-marginalia:    false;
 $use-matrix:        false;
-$use-media:         false;
-$use-nav:           false;
+$use-media:         true;
+$use-nav:           true;
 $use-options:       false;
 $use-pagination:    false;
 $use-rules:         false;
@@ -46,11 +46,20 @@ $use-this-or-this:  false;
 /**
  * Place any variables that should override inuit.css’ defaults here.
  */
-$palm-start: 	480px;
-$lap-start: 	767px;
-$desk-start: 	1025px;
-$wide-start: 	1280px;
+$palm-start:    480px;
+$lap-start:     767px;
+$desk-start:    1025px;
+$wide-start:    1280px;
 
+/*------------------------------------*\
+    $ADDITIONS
+\*------------------------------------*/
+/**
+ * Place any custom variables here.
+ */
+$base-value: 16;
+$max-width: 980px;
+$header-height: 90px;
 
 /*------------------------------------*\
     $COLOURS
@@ -58,29 +67,29 @@ $wide-start: 	1280px;
 /**
  * Define colours using the commented variables, don't forget to comment the colour name next to each variable.
  */
-//$alpha:
-//$bravo:
-//$charlie:
-//$delta:
-//$echo:
-//$foxtrot:
-//$golf:
-//$hotel:
-//$india:
-//$juliet:
-//$kilo:
-//$lima:
-//$mike:
-//$november:
-//$oscar:
-//$papa:
-//$quebec:
-//$romeo:
-//$sierra:
-//$tango:
-//$uniform:
-//$victor:
-//$whiskey:
-//$xray:
-//$yankee:
-//$zulu:
+$alpha: #000000;        // Black
+$bravo: #fbf6ed;        // White
+$charlie: #f8ebd2;      // Beige
+$delta: #ead1a3;        // Darker Beige
+$echo: #d7bc8a;         // Dark Gold
+$foxtrot: #c5a771;      // Brown
+$golf: #cfcfcf;         // Grey
+$hotel: #afafaf;        // Dark Grey
+$india: #f3833e;        // Dark Orange
+// $juliet:
+// $kilo:
+// $lima:
+// $mike:
+// $november:
+// $oscar:
+// $papa:
+// $quebec:
+// $romeo:
+// $sierra:
+// $tango:
+// $uniform:
+// $victor:
+// $whiskey:
+// $xray:
+// $yankee:
+// $zulu:

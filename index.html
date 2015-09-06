@@ -8,7 +8,7 @@
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>TODO; add title here.</title>
+    <title>BEM Token</title>
     <meta name="description" content="BEM template.">
     <meta name="author" content="VT">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,29 +37,218 @@
     <link rel="icon" sizes="114x114" href="release/images/favicons/favicon-114.png">
 </head>
 
-<body class="push">
+<body id="trumps">
 
     <!-- Primary Page Layout
     ================================================== -->
     <header>
-        <h1 class="mega">Verified Token</h1>
-        <nav>
-            <ul>
-                <li>Section One</li>
-                <li>Section Two</li>
-                <li>Section Three</li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <div class="grid">
+                <div class="grid__item one-half">
+                    <img src="http://placekitten.com/g/90/90" alt="Logo Placeholder">
+                </div><!--
+             --><div class="grid__item one-half">
+                    <nav class="push-quarter">
+                        <ul class="nav nav--fit">
+                            <li class="js-slider-activater" slideID="basket">
+                                <a class="btn">Basket</a>
+                            </li>
+                            <li class="js-slider-activater" slideID="menu">
+                                <a class="btn">Menu</a>
+                            </li>
+                        </ul>
+
+                        <!-- TODO: add the search form -->
+
+                        <ul class="nav nav--fit">
+                            <li class="js-slider-activater" slideID="collection">
+                                <a class="btn">Collection</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-        <section>
-            <h1>Template</h1>
-            <p>Work in Progress</p>
-        </section>
-    </main>
-    <footer>
-        <p class="micro">&copy; 2015 VT</p>
-    </footer>
+
+    <div class="splash">
+        <div class="wrapper splash--content">
+            <div class="js-slider-activation +inactive" slideID="collection">
+                <ul class="nav nav--fit">
+                   <li class="text--center"><a href="" class="btn">Foo</a></li>
+                   <li class="text--center"><a href="" class="btn">Bar</a></li>
+                   <li class="text--center"><a href="" class="btn">Baz</a></li>
+                </ul>
+                <div class="media">
+                    <div class="media__img">
+                        <img src="http://placekitten.com/g/250/250" alt="">
+                    </div>
+                    <div class="media__body">
+                        <h3 class="delta push--ends">Category Name</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec vehicula urna ac nisi vehicula posuere. Sed nec odio risus.
+                            Mauris sit amet mollis justo. Sed congue pulvinar volutpat.
+                            Proin tempus, urna bibendum ornare tempus, nisl elit cursus ligula, in
+                            elementum sem mauris eget velit. Etiam quis tellus dignissim, lacinia tellus id,
+                            iaculis nisl. Vestibulum facilisis placerat tincidunt. Curabitur euismod odio
+                            at cursus ornare. Sed volutpat vitae ante et hendrerit.
+                            Phasellus sit amet augue eu mauris viverra dictum.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="js-slider-activation +inactive" slideID="basket">
+                <h2 class="gamma push--bottom">The Basket Section</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vehicula urna ac nisi vehicula posuere. Sed nec odio risus.
+                    Mauris sit amet mollis justo. Sed congue pulvinar volutpat.
+                    Proin tempus, urna bibendum ornare tempus, nisl elit cursus ligula, in
+                    elementum sem mauris eget velit. Etiam quis tellus dignissim, lacinia tellus id,
+                    iaculis nisl. Vestibulum facilisis placerat tincidunt. Curabitur euismod odio
+                    at cursus ornare. Sed volutpat vitae ante et hendrerit.
+                    Phasellus sit amet augue eu mauris viverra dictum.
+                </p>
+            </div>
+            <div class="js-slider-activation +inactive" slideID="menu">
+                <div class="grid">
+                    <div class="grid__item one-whole">
+                        <ul class="nav nav--fit">
+                            <li class="hard"><a href="" class="btn">One</a></li>
+                            <li class="hard"><a href="" class="btn push-quarter--sides">Two</a></li>
+                            <li class="hard"><a href="" class="btn">Three</a></li>
+                        </ul>
+                    </div><!--
+                    --><div class="grid__item one-whole">
+                        <ul class="nav nav--fit push-quarter--top">
+                            <li class="hard"><a href="" class="btn push-quarter--right">One</a></li>
+                            <li class="hard"><a href="" class="btn">Two</a></li>
+                        </ul>
+                    </div><!--
+                    --><div class="grid__item one-whole">
+                        <div class="social">
+                            <ul class="nav nav--block">
+                                <li><a class="social--icon" href=""><span class="icon--facebook"></span></a></li>
+                                <li><a class="social--icon" href=""><span class="icon--twitter"></span></a></li>
+                                <li><a class="social--icon" href=""><span class="icon--youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <main>
+            <h1 class="mega">The Shop</h1>
+
+            <div class="grid__item one-fifth lap-one-quarter palm-one-whole">
+                <h2 class="flush--top">Filters</h2>
+                <ul class="nav nav--stacked">
+                    <li><input type="checkbox" name="filter" value="1"> Filter 1</li>
+                    <li><input type="checkbox" name="filter" value="2"> Filter 2</li>
+                    <li><input type="checkbox" name="filter" value="3"> Filter 3</li>
+                </ul>
+            </div><!--
+            --><div class="grid__item four-fifths lap-three-quarters palm-one-whole">
+                <div class="grid">
+                    <ul>
+                        <li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li><!--
+                        --><li class="grid__item one-quarter lap-one-third palm-one-half">
+                            <div class="product__main">
+                                <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                <p>Product one</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="micro">&copy; 2015</p>
+        </footer>
+    </div>
 
     <!-- JS
     ================================================== -->

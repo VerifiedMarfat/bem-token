@@ -1,0 +1,12 @@
+@include trump(active) {
+    overflow: auto;
+    max-height: 500px;
+    @include vendor(transition, 1s ease-out);
+}
+
+@include trump(inactive) {
+    max-height: 0;
+    overflow: hidden;
+    @include vendor(transition, .5s);
+    @include vendor(transition-property, all);
+}

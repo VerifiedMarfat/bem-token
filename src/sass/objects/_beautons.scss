@@ -1,0 +1,13 @@
+.btn {
+    border: 0;
+    padding: 10px;
+    color: $bravo;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background-color: $foxtrot;
+
+    &:hover {
+        background-color: $echo;
+    }
+}
