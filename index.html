@@ -49,24 +49,24 @@
                 </div><!--
              --><div class="grid__item one-half lap-two-thirds palm-three-quarters">
                     <nav class="push-quarter--top">
-                        <ul class="nav nav--fit">
-                            <li class="js-slider-activater" slideID="basket">
-                                <a class="btn">Basket</a>
-                            </li>
-                            <li class="js-slider-activater" slideID="menu">
-                                <a class="btn">Menu</a>
-                            </li>
-                            <li class="js-slider-activater search">
-                                <form action="#" method="post" class="position--relative">
+                        <form action="#" method="post">
+                            <div class="search__area">
+                                <ul class="nav nav--fit position--relative">
+                                    <li class="js-slider-activater" slideID="basket">
+                                        <a class="btn">Basket</a>
+                                    </li>
+                                    <li class="js-slider-activater" slideID="menu">
+                                        <a class="btn">Menu</a>
+                                    </li>
                                     <input type="text" class="js-search--input search__input +inactive--width" placeholder="Search..."/>
-                                    <button type="submit" class="js-search--button search__btn btn">
-                                        <span class="icon--search"></span>
-                                    </button>
-                                </form>
-                            </li>
-                        </ul>
-
-                        <!-- TODO: add the search input form and style it -->
+                                </ul>
+                            </div>
+                            <div class="js-slider-activater search position--top-right">
+                                <button type="submit" class="js-search--button search__btn btn">
+                                    <span class="icon--search"></span>
+                                </button>
+                            </div>
+                        </form>
 
                         <ul class="nav nav--fit">
                             <li class="js-slider-activater" slideID="collection">

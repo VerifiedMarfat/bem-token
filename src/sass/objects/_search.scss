@@ -1,5 +1,5 @@
 .search {
-    max-width: 25px;
+    width: 50px;
 
     .search__btn {
         width: 100%;
@@ -10,18 +10,24 @@
         }
     }
 
-    .search__input {
-        right: 55px;
-        border: 0;
-        margin: 0;
-        padding: em(9) 0;
-        position: absolute;
-        background-color: $delta;
+}
 
-        &:focus {
-            outline: 0;
-        }
+.search__input {
+    width: 100%;
+    right: 0;
+    border: 0;
+    margin: 0;
+
+    padding: em(9) .5em;
+    position: absolute;
+    background-color: $delta;
+
+    &:focus {
+        outline: 0;
     }
+}
 
+.search__area {
+    margin-right: 50px;
 }
 
