@@ -25,3 +25,10 @@ a {
     font-size: inherit;
     text-decoration: none;
 }
+
+input,
+.search__btn {
+    &:focus {
+        outline: 0;
+    }
+}
