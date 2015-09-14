@@ -10,3 +10,17 @@
     @include vendor(transition, .5s);
     @include vendor(transition-property, all);
 }
+
+@include trump(active--width) {
+    max-width: 1000px;
+    @include vendor(transition, 1s ease-out);
+}
+
+@include trump(inactive--width) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 0;
+    overflow: hidden;
+    @include vendor(transition, .5s);
+    @include vendor(transition-property, all);
+}
