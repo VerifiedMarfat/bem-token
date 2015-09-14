@@ -1,5 +1,6 @@
 $(function() {
-    var $searchButton = $('.js-search--button'),
+    var $searchForm = $('form[name=search]'),
+        $searchButton = $('.js-search--button'),
         $searchInput = $('.js-search--input'),
         active = '+active--width',
         inactive = '+inactive--width';
@@ -7,12 +8,28 @@ $(function() {
     $searchButton.on("click", function(e) {
         e.preventDefault();
 
-        var self = $(this);
+        var self = $(this),
+            inputIsActive = $searchInput.hasClass(active) ? true : false,
+            searchHasTerm = $searchInput.val() !== "" ? true : false;
 
-        if($searchInput.hasClass(active)) {
-            $searchInput.removeClass(active).addClass(inactive);
+        if(searchHasTerm && !inputIsActive) {
+            make_inactive($searchInput);
+        } else if(searchHasTerm && inputIsActive) {
+            $searchForm.submit();
+        }
+
+        if(inputIsActive) {
+            make_inactive($searchInput);
         } else {
-            $searchInput.removeClass(inactive).addClass(active);
+            make_active($searchInput);
         }
     });
+
+    function make_inactive(element) {
+        element.removeClass(active).addClass(inactive);
+    }
+
+    function make_active(element) {
+        element.removeClass(inactive).addClass(active);
+    }
 });
