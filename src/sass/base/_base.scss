@@ -9,6 +9,7 @@ header {
     position: fixed;
     height: $header-height;
     background-color: $charlie;
+    z-index: 100;
 }
 
 nav {

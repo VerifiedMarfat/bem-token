@@ -1,0 +1,36 @@
+.item__main {
+    background-color: $golf;
+    position: relative;
+    z-index: 3;
+}
+
+.item__side {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    z-index: 2;
+    background-color: $golf;
+    transition-property: all;
+    @include vendor(transition, .5s);
+
+    &--left {
+        opacity: 1;
+        left: -100%;
+        margin-left: 24px;
+    }
+
+    &--right {
+        opacity: 1;
+        left: 100%;
+    }
+}
+
+.grid__slider {
+    position: relative;
+    z-index: 1;
+}
+
+.item--blur {
+    opacity: .5;
+    z-index: 0;
+}
