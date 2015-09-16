@@ -1,16 +1,19 @@
 $(function() {
     var $activater = $(".js-slider-activater"),
         $activation = $(".js-slider-activation"),
+        groupAttr = "slideGroup",
         matchAttr = "slideID",
         active = "+active",
         inactive = "+inactive";
 
     $activater.on("click", function() {
         var self = $(this),
+            activaterGroup = self.attr(groupAttr),
             activaterID = self.attr(matchAttr);
 
         $activation.each(function(index) {
             var self = $(this),
+                activationGroup = self.attr(groupAttr),
                 activationID = self.attr(matchAttr);
 
             if (activaterID == activationID) {
@@ -19,7 +22,7 @@ $(function() {
                 } else {
                     show(self);
                 }
-            } else {
+            } else if(activaterGroup == activationGroup) {
                 hide(self);
             }
         });
