@@ -73,7 +73,7 @@ $(function() {
 
     var classRight = 'item__side--right',
         classLeft = 'item__side--left',
-        gridPadding = 26;
+        gridPadding = 26; //padding+1
 
     function showSide(self) {
         var width = parseFloat(self.css('width'))/parseFloat(self.parent().css('width'))*100,
@@ -101,7 +101,7 @@ $(function() {
 
         $side.width(self.outerWidth(true) - gridPadding);
 
-        // reset size so it doesn't show up when resising window
+        // reset size so it doesn't show up when resizing window
         setTimeout(function() {
             $side.css({
                 width: '',

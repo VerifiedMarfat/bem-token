@@ -7,7 +7,7 @@
 .item__side {
     position: absolute;
     top: 0;
-    left: 24px;
+    left: $base-spacing-unit;
     z-index: 2;
     background-color: $golf;
     transition-property: all;
@@ -16,7 +16,7 @@
     &--left {
         opacity: 1;
         left: -100%;
-        margin-left: 24px;
+        margin-left: $base-spacing-unit;
     }
 
     &--right {
