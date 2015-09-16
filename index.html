@@ -53,10 +53,10 @@
                         <form action="/search" method="POST" name="search">
                             <div class="push-double--right">
                                 <ul class="nav nav--fit">
-                                    <li class="js-slider-activater" slideGroup="nav" slideID="basket">
+                                    <li class="js-slider-activater" slideGroup="nav" deactivateAction="hide" slideID="basket">
                                         <a class="btn">Basket</a>
                                     </li>
-                                    <li class="js-slider-activater" slideGroup="nav" slideID="menu">
+                                    <li class="js-slider-activater" slideGroup="nav" deactivateAction="hide" slideID="menu">
                                         <a class="btn">Menu</a>
                                     </li>
                                     <input type="text" class="js-search--input search__input +inactive--width" placeholder="Search..."/>
@@ -71,7 +71,7 @@
                         </form>
 
                         <ul class="nav nav--fit">
-                            <li class="js-slider-activater" slideGroup="nav" slideID="collection">
+                            <li class="js-slider-activater" slideGroup="nav" deactivateAction="hide" slideID="collection">
                                 <a class="btn">Collection</a>
                             </li>
                         </ul>
@@ -83,7 +83,7 @@
 
     <div class="splash">
         <div class="wrapper splash--content">
-            <div class="js-slider-activation +inactive" slideGroup="nav" slideID="collection">
+            <div class="js-slider-activation +inactive" slideGroup="nav" slideID="collection" >
                 <ul class="nav nav--fit">
                    <li class="text--center"><a class="js-slider-activater btn" slideGroup="collection" slideID="category1">Foo</a></li>
                    <li class="text--center"><a class="js-slider-activater btn" slideGroup="collection" slideID="category2">Bar</a></li>
@@ -94,7 +94,7 @@
                         <img src="http://placekitten.com/g/250/250" alt="">
                     </div>
                     <div class="media__body">
-                        <div class="js-slider-activation +inactive" slideGroup="collection" slideID="category1">
+                        <div class="js-slider-activation +active" slideGroup="collection" slideID="category1">
                             <h3 class="delta push--ends">Category 1</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
