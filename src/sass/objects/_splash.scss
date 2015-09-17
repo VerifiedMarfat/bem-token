@@ -1,6 +1,7 @@
 .splash {
     width: 100%;
     position: fixed;
+    z-index: 100;
 
     .splash--content {
         background-color: rgba(225, 225, 225, .9);

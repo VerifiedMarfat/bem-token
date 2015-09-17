@@ -40,7 +40,7 @@ $(function() {
 
     /*** item list slider ***/
 
-    var sideClass = '.item__side',
+    var sideClass = '.js-item__side',
         $items = $('.js-grid__slider'),
         $sides = $( sideClass ),
         blur = 'item--blur';
