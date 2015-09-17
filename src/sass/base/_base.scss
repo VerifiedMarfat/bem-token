@@ -27,8 +27,8 @@ a {
     text-decoration: none;
 }
 
-button,
-input {
+input,
+.search__btn {
     &:focus {
         outline: 0;
     }

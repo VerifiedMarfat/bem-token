@@ -151,7 +151,7 @@ module.exports = function(grunt) {
          ============================================================*/
         githooks: {
             all: {
-                'pre-commit': 'sass scsslint jscpd jshint complexity'
+                'pre-commit': 'scsslint jscpd jshint complexity'
             }
         }
 
