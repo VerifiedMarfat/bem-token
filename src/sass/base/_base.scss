@@ -26,3 +26,10 @@ a {
     font-size: inherit;
     text-decoration: none;
 }
+
+button,
+input {
+    &:focus {
+        outline: 0;
+    }
+}
