@@ -13,44 +13,19 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon--search {
-    &:before {
-        content: "\e600";
-    }
-}
+$icons: (
+    search: "\e600",
+    plus: "\e601",
+    minus: "\e602",
+    cross: "\e603",
+    mail: "\e604",
+    facebook: "\e605",
+    twitter: "\e606",
+);
 
-.icon--plus {
-    &:before {
-        content: "\e601";
-    }
-}
-
-.icon--minus {
-    &:before {
-        content: "\e602";
-    }
-}
-
-.icon--cross {
-    &:before {
-        content: "\e607";
-    }
-}
-
-.icon--mail {
-    &:before {
-        content: "\e603";
-    }
-}
-
-.icon--facebook {
-    &:before {
-        content: "\e604";
-    }
-}
-
-.icon--twitter {
-    &:before {
-        content: "\e605";
+@each $name, $icon in $icons {
+    .icon-#{$name}--before:before,
+    .icon-#{$name}--after:after {
+        content: $icon;
     }
 }
