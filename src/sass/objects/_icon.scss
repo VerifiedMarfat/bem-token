@@ -21,6 +21,7 @@ $icons: (
     mail: "\e604",
     facebook: "\e605",
     twitter: "\e606",
+    check: "\e607"
 );
 
 @each $name, $icon in $icons {

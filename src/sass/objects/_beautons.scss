@@ -10,4 +10,8 @@
     &:hover {
         background-color: $echo;
     }
+
+    &--active {
+        background-color: $hotel;
+    }
 }
