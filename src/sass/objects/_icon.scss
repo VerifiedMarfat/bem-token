@@ -1,5 +1,4 @@
-[class^="icon-"],
-[class*=" icon-"] {
+%icon {
     font-family: "icomoon";
     speak: none;
     font-style: normal;
@@ -13,20 +12,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-$icons: (
-    search: "\e600",
-    plus: "\e601",
-    minus: "\e602",
-    cross: "\e603",
-    mail: "\e604",
-    facebook: "\e605",
-    twitter: "\e606",
-    check: "\e607"
-);
-
-@each $name, $icon in $icons {
-    .icon-#{$name}--before:before,
-    .icon-#{$name}--after:after {
-        content: $icon;
-    }
+.icon--search {
+    @include icon("before", $search);
 }
