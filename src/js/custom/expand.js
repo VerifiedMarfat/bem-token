@@ -5,7 +5,7 @@ $(function() {
         blur = 'item--blur';
 
     var sliderTimer;
-    var delay = 600;
+    var delay = 200;
 
     $items.hover(function() {
         // on mouse in, start a timeout
