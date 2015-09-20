@@ -1,11 +1,11 @@
 $(function() {
     var sideClass = '.js-item__side',
-        $items = $('.js-grid__slider'),
+        $items = $('.js-expander'),
         $sides = $( sideClass ),
         blur = 'item--blur';
 
     var sliderTimer;
-    var delay = 600;
+    var delay = 200;
 
     $items.hover(function() {
         // on mouse in, start a timeout
@@ -35,21 +35,15 @@ $(function() {
         gridPadding = 26; //padding+1
 
     function showSide(self) {
-        var width = parseFloat(self.css('width'))/parseFloat(self.parent().css('width'))*100,
-            index = self.index(),
+        var index = self.index(),
+            gridCount = Math.round(parseFloat(self.parent().css('width'))/parseFloat(self.css('width'))),
             $side = self.find(sideClass),
             thisSideClass = classRight;
 
         $side.height(self.outerHeight());
         $side.width(self.outerWidth(true));
 
-        if(width<30){
-            if((index+1)%4===0) thisSideClass = classLeft;
-        } else if(width<49){
-            if((index+1)%3===0) thisSideClass = classLeft;
-        } else {
-            if((index+1)%2===0) thisSideClass = classLeft;
-        }
+        if((index+1)%(gridCount)===0) thisSideClass = classLeft;
 
         $side.addClass(thisSideClass);
     }
