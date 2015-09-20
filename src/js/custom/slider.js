@@ -5,10 +5,12 @@ $(function() {
         groupName = "slideName",
         groupID = "slideID",
         active = "+active",
-        inactive = "+inactive";
+        inactive = "+inactive",
+        btnActive = "btn--active";
 
     $activator.on("click", function() {
         var self = $(this),
+            $thisBtn = self.find(".btn"),
             isCollapsible = self.is($collapsible),
             activatorGroup = self.attr(groupName),
             activatorID = self.attr(groupID);
@@ -21,8 +23,10 @@ $(function() {
             if (activatorID === activationID) {
                 if (self.hasClass(active) && isCollapsible) {
                     hide(self);
+                    $thisBtn.removeClass(btnActive);
                 } else {
                     show(self);
+                    $thisBtn.addClass(btnActive);
                 }
             } else if(activatorGroup === activationGroup) {
                 hide(self);
