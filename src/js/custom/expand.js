@@ -1,6 +1,6 @@
 $(function() {
     var sideClass = '.js-item__side',
-        $items = $('.js-grid__slider'),
+        $items = $('.js-expander'),
         $sides = $( sideClass ),
         blur = 'item--blur';
 
