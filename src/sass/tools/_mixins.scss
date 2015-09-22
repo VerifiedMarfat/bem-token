@@ -5,8 +5,10 @@
 }
 
 @mixin icon($location, $name) {
-    @extend %icon;
-
+    &:before,
+    &:after, {
+        @extend %icon;
+    }
 
     @if "after" == $location {
         &:after {

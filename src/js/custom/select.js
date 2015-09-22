@@ -1,17 +1,18 @@
 $(function() {
-    var $selector = $(".js-selection"),
+    var $selector = $(".js-selector"),
         selected = "+selected";
 
     $selector.on("click", function() {
         var self = $(this),
-            isSelected = self.hasClass(selected),
-            value = self.attr("value");
+            $selection = self.children(".js-selection"),
+            isSelected = $selection.hasClass(selected),
+            value = $selection.attr("value");
 
         if (isSelected) {
-            self.removeClass(selected);
+            $selection.removeClass(selected);
             filter(value, "remove");
         } else {
-            self.addClass(selected);
+            $selection.addClass(selected);
             filter(value, "add");
         }
     });
