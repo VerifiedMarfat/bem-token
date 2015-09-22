@@ -1,30 +1,34 @@
 $(function() {
-    var $activater = $(".js-slider-activater"),
+    var $activator = $(".js-slider-activator"),
         $activation = $(".js-slider-activation"),
-        matchAttr = "slideID",
+        $collapsible = $("[collapsible]"),
+        groupName = "slideName",
+        groupID = "slideID",
         active = "+active",
         inactive = "+inactive";
 
-    $activater.on("click", function() {
+    $activator.on("click", function() {
         var self = $(this),
-            activaterID = self.attr(matchAttr);
+            isCollapsible = self.is($collapsible),
+            activatorGroup = self.attr(groupName),
+            activatorID = self.attr(groupID);
 
         $activation.each(function(index) {
             var self = $(this),
-                activationID = self.attr(matchAttr);
+                activationGroup = self.attr(groupName),
+                activationID = self.attr(groupID);
 
-            if (activaterID == activationID) {
-                if (self.hasClass(active)) {
+            if (activatorID === activationID) {
+                if (self.hasClass(active) && isCollapsible) {
                     hide(self);
                 } else {
                     show(self);
                 }
-            } else {
+            } else if(activatorGroup === activationGroup) {
                 hide(self);
             }
         });
     });
-
 
     function hide(element) {
         element.addClass(inactive).removeClass(active);
