@@ -24,3 +24,7 @@
     @include vendor(transition, .5s);
     @include vendor(transition-property, all);
 }
+
+@include trump(selected) {
+    @include icon("after", $check);
+}
