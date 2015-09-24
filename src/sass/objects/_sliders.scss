@@ -1,14 +1,14 @@
-.item__main {
+.tile__main {
     background-color: $golf;
     position: relative;
     z-index: 3;
 }
 
-.item__side {
+.tile__expand {
     position: absolute;
     top: 0;
     left: $base-spacing-unit;
-    z-index: 2;
+    z-index: -1;
     background-color: $golf;
     transition-property: all;
     @include vendor(transition, .5s);
@@ -25,16 +25,16 @@
     }
 }
 
-.item__form {
+.tile__button {
     z-index: 3;
 }
 
-.grid__expander {
+.tile--expander {
     position: relative;
     z-index: 1;
 }
 
-.item--blur {
+.tile--blur {
     opacity: .5;
     z-index: 0;
 }

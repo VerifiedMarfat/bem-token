@@ -1,11 +1,10 @@
 $(function() {
-    var sideClass = '.js-item__side',
+    var sideClass = '.js-tile__expand',
         $items = $('.js-expander'),
         $sides = $( sideClass ),
-        blur = 'item--blur';
-
-    var sliderTimer;
-    var delay = 200;
+        blur = 'tile--blur',
+        sliderTimer,
+        delay = 200;
 
     $items.hover(function() {
         // on mouse in, start a timeout
@@ -30,8 +29,8 @@ $(function() {
         }, delay/2);
     });
 
-    var classRight = 'item__side--right',
-        classLeft = 'item__side--left',
+    var classRight = 'tile__expand--right',
+        classLeft = 'tile__expand--left',
         gridPadding = 26; //padding+1
 
     function showSide(self) {
