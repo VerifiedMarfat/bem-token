@@ -1,5 +1,4 @@
-[class^="icon-"],
-[class*=" icon-"] {
+%icon {
     font-family: "icomoon";
     speak: none;
     font-style: normal;
@@ -14,43 +13,5 @@
 }
 
 .icon--search {
-    &:before {
-        content: "\e600";
-    }
-}
-
-.icon--plus {
-    &:before {
-        content: "\e601";
-    }
-}
-
-.icon--minus {
-    &:before {
-        content: "\e602";
-    }
-}
-
-.icon--cross {
-    &:before {
-        content: "\e607";
-    }
-}
-
-.icon--mail {
-    &:before {
-        content: "\e603";
-    }
-}
-
-.icon--facebook {
-    &:before {
-        content: "\e604";
-    }
-}
-
-.icon--twitter {
-    &:before {
-        content: "\e605";
-    }
+    @include icon("before", $search);
 }

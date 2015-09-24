@@ -3,3 +3,22 @@
         @content;
     }
 }
+
+@mixin icon($location, $name) {
+    &:before,
+    &:after, {
+        @extend %icon;
+    }
+
+    @if "after" == $location {
+        &:after {
+            content: $name;
+        }
+    }
+
+    @if "before" == $location {
+        &:before {
+            content: $name;
+        }
+    }
+}
