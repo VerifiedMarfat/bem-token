@@ -1,3 +1,8 @@
+.tile--expander {
+    position: relative;
+    z-index: 1;
+}
+
 .tile__main {
     background-color: $golf;
     position: relative;
@@ -26,16 +31,10 @@
 }
 
 .tile__button {
-    z-index: 3;
+    //z-index: 3;
 }
 
-.tile--expander {
-    position: relative;
-    z-index: 1;
-}
-
-.tile--blur {
+.blur {
     opacity: .5;
     z-index: 0;
 }
-

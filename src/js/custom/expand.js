@@ -1,8 +1,8 @@
 $(function() {
-    var sideClass = '.js-tile__expand',
-        $items = $('.js-expander'),
+    var sideClass = '.js-tile__expander',
+        $items = $('.js-tile--expandable'),
         $sides = $( sideClass ),
-        blur = 'tile--blur',
+        blur = 'blur',
         sliderTimer,
         delay = 200;
 
