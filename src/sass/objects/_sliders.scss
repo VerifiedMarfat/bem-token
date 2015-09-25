@@ -1,6 +1,9 @@
 .tile--expander {
     position: relative;
     z-index: 1;
+    background-color: $golf;
+    transition-property: all;
+    @include vendor(transition, .5s);
 }
 
 .tile__main {
@@ -12,26 +15,7 @@
 .tile__expand {
     position: absolute;
     top: 0;
-    left: $base-spacing-unit;
-    z-index: -1;
-    background-color: $golf;
-    transition-property: all;
-    @include vendor(transition, .5s);
-
-    &--left {
-        opacity: 1;
-        left: -100%;
-        margin-left: $base-spacing-unit;
-    }
-
-    &--right {
-        opacity: 1;
-        left: 100%;
-    }
-}
-
-.tile__button {
-    //z-index: 3;
+    right: 0;
 }
 
 .blur {

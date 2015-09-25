@@ -1,7 +1,9 @@
 $(function() {
-    var sideClass = '.js-tile__expander',
+    var mainClass = '.js-tile__main',
+        sideClass = '.js-tile__expand',
         $items = $('.js-tile--expandable'),
-        $sides = $( sideClass ),
+        leftClass = 'expand--left',
+        rightClass = 'expand--right',
         blur = 'blur',
         sliderTimer,
         delay = 200;
@@ -13,7 +15,7 @@ $(function() {
         sliderTimer = setTimeout(function() {
             addBlurOnAll();
             self.removeClass(blur);
-            showSide(self);
+            expand(self);
         }, delay);
 
     }, function() {
@@ -22,46 +24,37 @@ $(function() {
         // on mouse out, cancel the timer
         clearTimeout(sliderTimer);
 
-        hideSide(self);
+        shrink(self);
 
         setTimeout(function() {
             clearBlurOnAll();
         }, delay/2);
     });
 
-    var classRight = 'tile__expand--right',
-        classLeft = 'tile__expand--left',
-        gridPadding = 26; //padding+1
+    function expand(self) {
+        var index = self.parent().index(),
+            gridCount = Math.round(
+                parseFloat(self.parent().parent().css('width'))/
+                parseFloat(self.parent().css('width'))
+            );
 
-    function showSide(self) {
-        var index = self.index(),
-            gridCount = Math.round(parseFloat(self.parent().css('width'))/parseFloat(self.css('width'))),
-            $side = self.find(sideClass),
-            thisSideClass = classRight;
+        self.width(self.parent().outerWidth()+self.outerWidth());
+        self.find(mainClass).width(self.parent().width());
+        self.find(sideClass).width(self.parent().width());
 
-        $side.height(self.outerHeight());
-        $side.width(self.outerWidth(true));
-
-        if((index+1)%(gridCount)===0) thisSideClass = classLeft;
-
-        $side.addClass(thisSideClass);
+        if((index+1)%(gridCount)===0) {
+            self.addClass(leftClass);
+        } else self.addClass(rightClass);
     }
 
-    function hideSide(self) {
-        var index = self.index(),
-            $side = self.find(sideClass);
-
-        $side.width(self.outerWidth(true) - gridPadding);
-
-        // reset size so it doesn't show up when resizing window
-        setTimeout(function() {
-            $side.css({
-                width: '',
-                height: ''
+    function shrink(self) {
+        self.removeClass(leftClass).removeClass(rightClass);
+        self.css({
+                width: ''
             });
-        }, delay);
-
-        $side.removeClass(classLeft).removeClass(classRight);
+        self.find(mainClass).css({
+                width: ''
+            });
     }
 
     function addBlurOnAll() {
