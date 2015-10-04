@@ -17,9 +17,9 @@
 }
 
 @include trump(inactive--width) {
+    max-width: 0;
     padding-left: 0;
     padding-right: 0;
-    max-width: 0;
     overflow: hidden;
     @include vendor(transition, .5s);
     @include vendor(transition-property, all);

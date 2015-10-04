@@ -1,30 +1,48 @@
 $(function() {
     var $activator = $(".js-slider-activator"),
-        $activation = $(".js-slider-activation"),
-        $collapsible = $("[collapsible]"),
-        groupName = "slideName",
-        groupID = "slideID",
+        $button = $(".js-button"),
         active = "+active",
-        inactive = "+inactive";
+        inactive = "+inactive",
+        activateButton = "btn--active";
+
+    $button.on("click", function() {
+        var self = $(this),
+            isActive = self.hasClass(activateButton);
+
+        if (isActive) {
+            deactivate(self);
+        } else {
+            $button.each(function() {
+                var self = $(this);
+                deactivate(self);
+            });
+            activate(self);
+        }
+    });
 
     $activator.on("click", function() {
-        var self = $(this),
-            isCollapsible = self.is($collapsible),
-            activatorGroup = self.attr(groupName),
-            activatorID = self.attr(groupID);
+        var clickedButton = $(this),
+            groupID = "slideID",
+            groupName = "slideName",
+            $collapsible = $("[collapsible]"),
+            $activation = $(".js-slider-activation"),
+            isCollapsible = clickedButton.is($collapsible),
+            activatorGroup = clickedButton.attr(groupName),
+            activatorID = clickedButton.attr(groupID);
 
-        $activation.each(function(index) {
+        $activation.each(function() {
             var self = $(this),
                 activationGroup = self.attr(groupName),
-                activationID = self.attr(groupID);
+                activationID = self.attr(groupID),
+                isActive = self.hasClass(active);
 
             if (activatorID === activationID) {
-                if (self.hasClass(active) && isCollapsible) {
+                if (isActive && isCollapsible) {
                     hide(self);
                 } else {
                     show(self);
                 }
-            } else if(activatorGroup === activationGroup) {
+            } else if (activatorGroup === activationGroup) {
                 hide(self);
             }
         });
@@ -36,6 +54,14 @@ $(function() {
 
     function show(element) {
         element.removeClass(inactive).addClass(active);
+    }
+
+    function activate(element) {
+        element.addClass(activateButton);
+    }
+
+    function deactivate(element) {
+        element.removeClass(activateButton);
     }
 });
 
