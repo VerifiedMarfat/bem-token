@@ -1,22 +1,25 @@
 .search {
     top: 0;
     right: 0;
+    width: 48px;
+    height: 100%;
     position: absolute;
-    width: $double-spacing-unit;
 
     .search__btn {
+        padding: 0;
         width: 100%;
-        padding: 8px 0 9px;
+        height: 100%;
     }
-
 }
 
 .search__input {
+    top: 0;
     right: 0;
     border: 0;
     margin: 0;
     width: 100%;
-    padding: 9px;
+    height: 100%;
+    padding: 10px;
     position: absolute;
     background-color: $delta;
 }
