@@ -1,68 +1,80 @@
 $(function() {
-    var mainClass = '.js-tile__main',
-        sideClass = '.js-tile__expand',
+    var $mainClass = '.js-tile--main',
+        $sideClass = '.js-tile--expand',
         $items = $('.js-tile--expandable'),
-        leftClass = 'expand--left',
-        rightClass = 'expand--right',
+        slideLeft = 'expand--left',
+        slideRight = 'expand--right',
+        // TODO check whether its really necessary to define this variable
+        // as the variable name and value is the same and therefore
+        // unlikely to change. With a change we might be required to change
+        // the variable name, leading to the same issue as having to replace
+        // it in multiple places for it to still make sense.
         blur = 'blur',
-        sliderTimer,
-        delay = 200;
+        delay = 200,
+        sliderTimer;
 
-    $items.hover(function() {
-        // on mouse in, start a timeout
+    $items.on('mouseenter', function() {
         var self = $(this);
 
         sliderTimer = setTimeout(function() {
-            addBlurOnAll();
+            addBlur();
             self.removeClass(blur);
             expand(self);
         }, delay);
+    });
 
-    }, function() {
+    $items.on('mouseleave', function() {
+        var self = $(this),
+            delay = delay / 2;
 
-        var self = $(this);
-        // on mouse out, cancel the timer
         clearTimeout(sliderTimer);
 
         shrink(self);
 
         setTimeout(function() {
-            clearBlurOnAll();
-        }, delay/2);
+            clearBlur();
+        }, delay);
     });
 
     function expand(self) {
         var index = self.parent().index(),
-            gridCount = Math.round(
-                parseFloat(self.parent().parent().css('width'))/
-                parseFloat(self.parent().css('width'))
-            );
+            tileCount = Math.round(
+                // TODO replace the call to parent().parent() element. This is currently too ambiguous.
+                parseFloat(self.parent().parent().css('width'))/parseFloat(self.parent().css('width'))
+            ),
+            tilePosition = (index + 1) % (tileCount);
 
+        // TODO: check if we can set these widths using classes instead.
         self.width(self.parent().outerWidth()+self.outerWidth());
-        self.find(mainClass).width(self.parent().width());
-        self.find(sideClass).width(self.parent().width());
+        self.find($mainClass).width(self.parent().width());
+        self.find($sideClass).width(self.parent().width());
 
-        if((index+1)%(gridCount)===0) {
-            self.addClass(leftClass);
-        } else self.addClass(rightClass);
+        if (0 === tilePosition) {
+            self.addClass(slideLeft);
+        } else {
+            self.addClass(slideRight);
+        }
     }
 
     function shrink(self) {
-        self.removeClass(leftClass).removeClass(rightClass);
+        self.removeClass(slideLeft).removeClass(slideRight);
+        // TODO check if we can remove these style settings via JS.
         self.css({
-                width: ''
-            });
-        self.find(mainClass).css({
-                width: ''
-            });
+            width: ''
+        });
+        self.find($mainClass).css({
+            width: ''
+        });
     }
 
-    function addBlurOnAll() {
+    // TODO rethink whether this method being called once and only contains
+    // a single line needs to be seperated as such.
+    function addBlur() {
         $items.addClass(blur);
     }
 
-    function clearBlurOnAll() {
+    // TODO see previous comment!
+    function clearBlur() {
         $items.removeClass(blur);
     }
-
 });

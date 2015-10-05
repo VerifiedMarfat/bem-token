@@ -1,3 +1,4 @@
+// TODO: check the filename and the object name, follow the naming conventions.
 .tile--expander {
     position: relative;
     z-index: 1;
@@ -18,6 +19,9 @@
     right: 0;
 }
 
+// TODO: check whether this class belongs in this file. This setup
+// currently indiciates that this class is tighly linked to the
+// tile object.
 .blur {
     opacity: .5;
     z-index: 0;
