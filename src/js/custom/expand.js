@@ -9,7 +9,13 @@ $(function() {
         // unlikely to change. With a change we might be required to change
         // the variable name, leading to the same issue as having to replace
         // it in multiple places for it to still make sense.
-        blur = 'blur',
+
+        // DON'T GET THIS??? the name is used in multiple (3) places, in the
+        // code so I think it is fair enough to have it defined in here.
+        // Anyways I thought it is a good practice to have all the classes
+        // defined at the start, so that you don't need to look for them in
+        // the code.
+        blur = 'tile--blur',
         delay = 200,
         sliderTimer;
 
