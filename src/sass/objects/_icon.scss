@@ -15,3 +15,15 @@
 .icon--search {
     @include icon("before", $search);
 }
+
+.icon--twitter {
+    @include icon("before", $twitter);
+}
+
+.icon--facebook {
+    @include icon("before", $facebook);
+}
+
+.icon--mail {
+    @include icon("before", $mail);
+}
