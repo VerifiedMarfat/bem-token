@@ -1,101 +1,14 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-
-<head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>BEM Token</title>
-    <meta name="description" content="BEM template.">
-    <meta name="author" content="VT">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="/release/css/app.min.css">
-
-    <!-- JS
-    ================================================== -->
-    <script src="/release/js/lib.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="/release/images/favicons/favicon.ico">
-    <link rel="icon" href="/release/images/favicons/favicon-57.png">
-    <link rel="icon" sizes="72x72" href="/release/images/favicons/favicon-72.png">
-    <link rel="icon" sizes="114x114" href="release/images/favicons/favicon-114.png">
-</head>
+<?php //### HEAD ###
+    include 'partial-views/head.php';
+?>
 
 <body id="trumps">
 
-    <!-- Primary Page Layout
-    ================================================== -->
-    <header>
-        <div class="wrapper">
-            <div class="grid">
-                <div class="grid__item one-half lap-one-third palm-one-quarter">
-                    <div class="push-half--top push--left">
-                        <img src="http://placekitten.com/g/125/125" alt="Logo Placeholder">
-                    </div>
-                </div><!--
-             --><div class="grid__item one-half lap-two-thirds palm-three-quarters">
-                    <nav class="push-half--top">
+    <?php //### HEADER ###
+        include 'partial-views/header.php';
+    ?>
 
-                        <form action="/search" method="POST" name="search">
-                            <div class="push-double--right">
-                                <ul class="nav nav--fit flush">
-                                    <li>
-                                        <a class="js-slider-activator js-button btn" slideName="nav" slideID="basket" collapsible>Basket</a>
-                                    </li>
-                                    <li>
-                                        <a class="js-slider-activator js-button btn" slideName="nav" slideID="menu" collapsible>Menu</a>
-                                    </li>
-                                    <input type="text" class="js-search--input search__input +inactive--width" placeholder="Search..."/>
-                                </ul>
-                            </div>
-
-                            <div class="search">
-                                <button type="submit" class="js-search--button js-button search__btn btn">
-                                    <span class="icon--search"></span>
-                                </button>
-                            </div>
-                        </form>
-
-                        <ul class="nav nav--fit flush">
-                            <li>
-                                <a class="js-slider-activator js-button btn" slideName="nav" slideID="collection" collapsible>Collection</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="social">
-                        <ul class="nav nav--fit flush">
-                            <li class="hard">
-                                <a class="social--icon" href=""><span class="icon--twitter"></span></a>
-                            </li>
-                            <li class="hard">
-                                <a class="social--icon" href=""><span class="icon--facebook"></span></a>
-                            </li>
-                            <li class="hard">
-                                <a class="social--icon" href=""><span class="icon--mail"></span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    <?php //### CONTENT ### ?>
     <div class="splash">
         <div class="wrapper splash--content">
             <div class="js-slider-activation +inactive" slideName="nav" slideID="collection" >
@@ -227,85 +140,85 @@
                         <ul>
                             <li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li><!--
                             --><li class="grid__item one-quarter lap-one-third palm-one-half">
                                 <div class="product__main">
-                                    <img src="http://ttsecigandvape.com/wp-content/uploads/2015/07/vape-pen.png"/>
+                                    <img src="http://placekitten.com/g/400/290"/>
                                     <p>Product one</p>
                                 </div>
                             </li>
@@ -316,9 +229,9 @@
         </div>
     </main>
 
-    <footer>
-        <p class="micro">&copy; 2015</p>
-    </footer>
+    <?php //### FOOTER ###
+        include 'partial-views/footer.php';
+    ?>
 
     <!-- JS
     ================================================== -->
@@ -326,5 +239,6 @@
 
     <!-- End Document
     ================================================== -->
+
 </body>
 </html>
