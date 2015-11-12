@@ -52,3 +52,7 @@
             </div>
         </div>
     </header>
+
+    <?php //### SPLASH ###
+        include 'partial-views/splash.php';
+    ?>
