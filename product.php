@@ -16,7 +16,7 @@
 
     <?php //### CONTENT ### ?>
     <main>
-        <div class="wrapper push">
+        <div class="wrapper soft--top">
             <div class="grid">
                 <div class="grid__item one-third palm-one-whole">
                     <form action="">
