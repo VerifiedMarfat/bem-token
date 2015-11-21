@@ -306,31 +306,24 @@
         </div>
     </main>
 
-    <footer>
-        <div class="wrapper">
-            <div class="grid">
-                <div class="grid__item one-half lap-one-third palm-one-whole">
-                    <div class="footer-newsletter"> <!-- this class is not ideal, but some starting point. Layouting will depend on how many other buttons we expect to have in the footer -->
-                        <a class="btn btn--block js-selector" value="1"><span class="js-selection">Newsletter </span></a></li>
-                    </div>
-                </div><!--
-             --><div class="grid__item one-half lap-two-thirds palm-one-whole">
-                    <div class="grid">
-                        <div class="grid__item one-third palm-one-whole">
-                            <a class="btn btn--block" href="">All the</a>
-                        </div><!--
-                     --><div class="grid__item one-third palm-one-whole">
-                            <a class="btn btn--block" href="">Hygiene</a>
-                        </div><!--
-                     --><div class="grid__item one-third palm-one-whole">
-                            <a class="btn btn--block" href="">Pages</a>
-                        </div>
-                    </div>
+    <footer class="wrapper">
+        <div class="grid">
+            <div class="grid__item one-half lap-one-third palm-one-whole">
+                <!-- TODO: apply the same functionality as search. On button click an input field will appear where
+                    user can type their email and submit the form. -->
+                <div class="footer-newsletter">
+                    <a class="btn btn--block js-selector" value="1"><span class="js-selection">Newsletter </span></a></li>
                 </div>
+            </div><!--
+         --><div class="grid__item one-half lap-two-thirds palm-one-whole">
+                <ul class="nav nav--fit">
+                    <li><a class="btn" href="">Contact us</a></li>
+                    <li><a class="btn" href="">Privacy</a></li>
+                    <li><a class="btn" href="">Terms &amp; Conditions</a></li>
+                </ul>
             </div>
         </div>
-        <!-- where does copy goes? -->
-        <p class="micro">&copy; 2015</p>
+        <p class="float--right micro">&copy; 2015</p>
     </footer>
 
     <!-- JS
