@@ -4,13 +4,13 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
-<?php 
+<?php
     include 'partial-views/head.php';
 ?>
 
 <body id="trumps">
 
-    <?php 
+    <?php
         include 'partial-views/header.php';
     ?>
 
@@ -37,16 +37,19 @@
             <form action="" class="text--right">
                 <input type="submit" value="Buy" name="checkout" class="btn one-third lap-two-thirds palm-one-whole">
             </form>
-            <div class="social">
-                <ul class="nav nav--block">
-                    <li><a class="social--icon" href=""><span class="icon-facebook--after"></span></a></li>
-                    <li><a class="social--icon" href=""><span class="icon-twitter--after"></span></a></li>
-                </ul>
+            <div class="text--right">
+                <div class="social one-third lap-two-thirds palm-one-whole product-share-cnt">
+                    <ul class="nav nav--block">
+                        <li><a class="social--icon" href=""><span class="icon--twitter"></span></a></li>
+                        <li><a class="social--icon" href=""><span class="icon--facebook"></span></a></li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </main>
 
-    <?php 
+    <?php
         include 'partial-views/footer.php';
     ?>
 
