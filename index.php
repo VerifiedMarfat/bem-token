@@ -4,17 +4,16 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
-<?php //### HEAD ###
+<?php 
     include 'partial-views/head.php';
 ?>
 
 <body id="trumps">
 
-    <?php //### HEADER ###
+    <?php 
         include 'partial-views/header.php';
     ?>
 
-    <?php //### CONTENT ### ?>
     <main>
         <div class="wrapper">
 
@@ -125,7 +124,7 @@
         </div>
     </main>
 
-    <?php //### FOOTER ###
+    <?php 
         include 'partial-views/footer.php';
     ?>
 
