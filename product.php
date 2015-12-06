@@ -24,9 +24,9 @@
                 <p>
                     Duis vehicula laoreet lacus sit amet luctus. Donec tempor pulvinar nunc nec rhoncus. Nullam pulvinar placerat nisi ac viverra. Nullam egestas, lacus quis fermentum rhoncus, magna enim consectetur nunc, in fringilla leo felis sit amet sem. Nunc nisi nunc, vehicula mattis justo a, tempor convallis lectus. Morbi ac ante tortor. Fusce vitae nunc ut nunc vehicula luctus id nec ex.
                 </p>
-                <p><strong># <span class="js-percent1"></span>%</strong></p>
-                <p><strong># <span class="js-percent2"></span>%</strong></p>
-                <p><strong># <span class="js-ml"></span>ml</strong></p>
+                <p><strong># 10%</strong></p>
+                <p><strong># 5%</strong></p>
+                <p><strong># 150ml</strong></p>
             </div>
         </div>
         <div class="text--right">
@@ -38,7 +38,7 @@
                 <input type="submit" value="Buy" name="checkout" class="btn one-third lap-two-thirds palm-one-whole">
             </form>
             <div class="text--right">
-                <div class="social one-third lap-two-thirds palm-one-whole product-share-cnt">
+                <div class="social one-third lap-two-thirds palm-one-whole display--inline-block">
                     <ul class="nav nav--block">
                         <li><a class="social--icon" href=""><span class="icon--twitter"></span></a></li>
                         <li><a class="social--icon" href=""><span class="icon--facebook"></span></a></li>
