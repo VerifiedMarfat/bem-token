@@ -61,7 +61,7 @@
                                     <li>
                                         <a class="js-slider-activator js-button btn" slideName="nav" slideID="menu" collapsible>Menu</a>
                                     </li>
-                                    <input type="text" class="js-search--input input-box__input +inactive--width" placeholder="Search..."/>
+                                    <input type="text" class="js-search--input input-box__input box-slide--right +inactive--width" placeholder="Search..."/>
                                 </ul>
                             </div>
 
@@ -306,23 +306,20 @@
         </div>
     </main>
 
-    <footer class="wrapper text--center">
+    <footer class="wrapper">
         <div class="grid">
             <div class="grid__item one-half palm-one-whole">
-                <!-- TODO: apply the same functionality as search. On button click an input field will appear where
-                    user can type their email and submit the form. -->
                 <form action="/subscribe" method="POST" name="subscribe" style="position:relative;">
-                    <div class="push-double--right">
-                        <div class="subscribe-text">Newsletter</div>
-                    </div>
 
                     <input type="text" class="js-subscribe--input input-box__input +inactive--width subscribe-input" placeholder="Subscribe..."/>
 
-                    <div class="input-box">
-                        <button type="submit" class="js-subscribe--button js-button input-box__btn btn">
-                            <span class="icon--mail"></span>
-                        </button>
+                    <button type="submit" class="js-subscribe--button js-button input-box__btn btn subscribe-btn float--left">
+                        <span class="icon--mail"></span>
+                    </button><!--
+                    --><div class="">
+                        <div class="subscribe-text">Newsletter</div>
                     </div>
+
                 </form>
             </div><!--
          --><div class="grid__item one-half palm-one-whole">
