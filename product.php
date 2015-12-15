@@ -38,7 +38,7 @@
                 <input type="submit" value="Buy" name="checkout" class="btn one-third lap-two-thirds palm-one-whole">
             </form>
             <div class="text--right">
-                <div class="social one-third lap-two-thirds palm-one-whole display--inline-block">
+                <div class="social one-third lap-two-thirds palm-one-whole display--inline">
                     <ul class="nav nav--block">
                         <li><a class="social--icon" href=""><span class="icon--twitter"></span></a></li>
                         <li><a class="social--icon" href=""><span class="icon--facebook"></span></a></li>
