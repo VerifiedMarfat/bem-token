@@ -18,12 +18,12 @@
                                     <li>
                                         <a class="js-slider-activator js-button btn" slideName="nav" slideID="menu" collapsible>Menu</a>
                                     </li>
-                                    <input type="text" class="js-search--input input-box__input box-slide--right +inactive--width" placeholder="Search..."/>
+                                    <input type="text" class="js-search--input slider__input box-slide--right +inactive--width" placeholder="Search..."/>
                                 </ul>
                             </div>
 
                             <div class="input-box">
-                                <button type="submit" class="js-search--button js-button input-box__btn btn">
+                                <button type="submit" class="js-search--button js-button btn btn__slider">
                                     <span class="icon--search"></span>
                                 </button>
                             </div>

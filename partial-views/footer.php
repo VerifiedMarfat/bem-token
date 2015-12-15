@@ -1,16 +1,13 @@
     <footer class="wrapper">
         <div class="grid">
             <div class="grid__item one-half palm-one-whole">
-                <form action="/subscribe" method="POST" name="subscribe" style="position:relative;">
+                <form action="/subscribe" method="POST" name="subscribe" class="slider--wrapper">
 
-                    <input type="text" class="js-subscribe--input input-box__input +inactive--width subscribe-input" placeholder="Subscribe..."/>
+                    <input type="text" class="js-subscribe--input slider__input slider__input--small +inactive--width " placeholder="Subscribe..."/>
 
-                    <button type="submit" class="js-subscribe--button js-button input-box__btn btn subscribe-btn float--left">
+                    <button type="submit" class="js-subscribe--button js-button btn soft-half float--left">
                         <span class="icon--mail"></span>
-                    </button><!--
-                    --><div class="">
-                        <div class="subscribe-text">Newsletter</div>
-                    </div>
+                    </button>
 
                 </form>
             </div><!--
